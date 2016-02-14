@@ -2990,12 +2990,24 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="I2C2_SDA">
 <contactref element="IC3" pad="5"/>
 <contactref element="BB1" pad="P9.20"/>
+<contactref element="U3" pad="4"/>
+<contactref element="U1" pad="6"/>
+<contactref element="R1" pad="1"/>
 <wire x1="15.24" y1="68.58" x2="41.91" y2="73.025" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.04" y1="13.79" x2="15.24" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="0.42" y1="5.08" x2="-1.04" y2="13.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.015" y1="-35.775" x2="0.42" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C2_SCL">
 <contactref element="IC3" pad="6"/>
 <contactref element="BB1" pad="P9.19"/>
+<contactref element="U3" pad="2"/>
+<contactref element="U1" pad="5"/>
+<contactref element="R2" pad="1"/>
 <wire x1="15.24" y1="66.04" x2="41.91" y2="75.565" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.54" y1="13.79" x2="15.24" y2="66.04" width="0" layer="19" extent="1-1"/>
+<wire x1="4.23" y1="5.08" x2="-2.54" y2="13.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.015" y1="-34.915" x2="4.23" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3VOLT">
 <contactref element="LED1" pad="A"/>
@@ -3373,10 +3385,6 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="I2C1_SDA">
 <contactref element="BB1" pad="P9.18"/>
-<contactref element="U1" pad="6"/>
-<contactref element="R1" pad="1"/>
-<wire x1="-1.04" y1="13.79" x2="39.37" y2="73.025" width="0" layer="19" extent="1-1"/>
-<wire x1="0.42" y1="5.08" x2="-1.04" y2="13.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$79">
 <contactref element="BB1" pad="P9.16"/>
@@ -3404,17 +3412,6 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$56">
 <contactref element="BB1" pad="P9.3"/>
-</signal>
-<signal name="I2C1_SLC">
-<contactref element="U1" pad="5"/>
-<contactref element="R2" pad="1"/>
-<wire x1="4.23" y1="5.08" x2="-2.54" y2="13.79" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SDA">
-<contactref element="U3" pad="4"/>
-</signal>
-<signal name="SCL">
-<contactref element="U3" pad="2"/>
 </signal>
 <signal name="SDO_A/G">
 <contactref element="U3" pad="5"/>
