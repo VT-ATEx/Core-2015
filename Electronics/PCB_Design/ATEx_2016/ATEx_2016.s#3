@@ -21576,6 +21576,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-152.4" y1="-48.26" x2="-157.48" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="BB1" gate="P9" pin="GND@1"/>
 <wire x1="-152.4" y1="-53.34" x2="-144.78" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-152.4" y="-53.34"/>
 </segment>
 <segment>
 <wire x1="-53.34" y1="-53.34" x2="-76.2" y2="-53.34" width="0.1524" layer="91"/>
@@ -21584,6 +21585,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-76.2" y1="-48.26" x2="-71.12" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="BB1" gate="P9" pin="GND@2"/>
 <wire x1="-76.2" y1="-53.34" x2="-83.82" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-53.34"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -21753,6 +21755,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-53.34" y1="-76.2" x2="-60.96" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-76.2" x2="-83.82" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SDA/SDI/SDO"/>
+<wire x1="2.54" y1="109.22" x2="5.08" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SDA"/>
+<wire x1="-157.48" y1="93.98" x2="-172.72" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-172.72" y1="93.98" x2="-177.8" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-172.72" y1="96.52" x2="-172.72" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-172.72" y="93.98"/>
+<label x="-177.8" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="-53.34" y="-73.66" size="1.27" layer="95" xref="yes"/>
+<label x="5.08" y="109.22" size="1.27" layer="95" xref="yes"/>
+<label x="58.42" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="I2C2_SCL" class="0">
 <segment>
@@ -21765,6 +21783,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-167.64" y="-76.2" size="1.778" layer="95"/>
 <pinref part="BB1" gate="P9" pin="GPIO0_13"/>
 <wire x1="-167.64" y1="-76.2" x2="-144.78" y2="-76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SCL/SPC"/>
+<wire x1="2.54" y1="106.68" x2="5.08" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SCL"/>
+<wire x1="-157.48" y1="88.9" x2="-162.56" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-162.56" y1="88.9" x2="-177.8" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="96.52" x2="-162.56" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-162.56" y="88.9"/>
+<label x="-177.8" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="-177.8" y="-73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="5.08" y="106.68" size="1.27" layer="95" xref="yes"/>
+<label x="58.42" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3VOLT" class="0">
@@ -22527,16 +22561,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-53.34" y1="-73.66" x2="-83.82" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-76.2" y="-73.66" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="SDA"/>
-<wire x1="-157.48" y1="93.98" x2="-172.72" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-172.72" y1="93.98" x2="-177.8" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-172.72" y1="96.52" x2="-172.72" y2="93.98" width="0.1524" layer="91"/>
-<junction x="-172.72" y="93.98"/>
-<label x="-177.8" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-<label x="-53.34" y="-73.66" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="N$79" class="0">
 <segment>
@@ -22594,32 +22618,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-177.8" y1="-55.88" x2="-165.1" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="BB1" gate="P9" pin="3.3V@1"/>
 <wire x1="-165.1" y1="-55.88" x2="-144.78" y2="-55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="I2C1_SLC" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SCL"/>
-<wire x1="-157.48" y1="88.9" x2="-162.56" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-162.56" y1="88.9" x2="-177.8" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="96.52" x2="-162.56" y2="88.9" width="0.1524" layer="91"/>
-<junction x="-162.56" y="88.9"/>
-<label x="-177.8" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<label x="-177.8" y="-73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SDA/SDI/SDO"/>
-<wire x1="2.54" y1="109.22" x2="5.08" y2="109.22" width="0.1524" layer="91"/>
-<label x="5.08" y="109.22" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SCL" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SCL/SPC"/>
-<wire x1="5.08" y1="106.68" x2="2.54" y2="106.68" width="0.1524" layer="91"/>
-<label x="5.08" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDO_A/G" class="0">
